@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>МБОУ СОШ №19</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="header__container container">
+    <div class="header__logo">
+      <img src="img/logo 1.svg" alt="Логотип школы">
+      <span class="header__school-name">МБОУ СОШ №19</span>
+    </div>
+
+    <!-- Горизонтальное меню -->
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__menu-item"><a href="#about" class="header__menu-link">О школе</a></li>
+        <li class="header__menu-item"><a href="#parents" class="header__menu-link">Родителям</a></li>
+        <li class="header__menu-item"><a href="#teachers" class="header__menu-link">Учителям</a></li>
+        <li class="header__menu-item"><a href="#graduates" class="header__menu-link">Выпускникам</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__contact">
+      <img src="img/clipart-phone-telephone-symbol-18 2.png" alt="Телефон">
+      <a href="tel:+79037838053" class="header__phone">+7-903-783-80-53</a>
+    </div>
+
+    <!-- Бургер (только на мобиле) -->
+    <button class="header__burger" aria-label="Меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Мобильное меню -->
+  <div class="header__mobile-menu">
+    <a href="#about" class="header__mobile-link">О школе</a>
+    <a href="#parents" class="header__mobile-link">Родителям</a>
+    <a href="#teachers" class="header__mobile-link">Учителям</a>
+    <a href="#graduates" class="header__mobile-link">Выпускникам</a>
+  </div>
+</header>
+
+
+  <main class="main">
+
+    <section class="programs">
+      <div class="programs__container container">
+        <div class="programs__text">
+          <h2 class="programs__title">МБОУ «Средняя общеобразовательная школа №19 имени Героя Советского Союза М. К. Нехаева» предлагает следующие образовательные программы:</h2>
+          <ul class="programs__list">
+            <li class="programs__item">Начальное общее образование: срок обучения — 4 года.</li>
+            <li class="programs__item">Основное общее образование: срок обучения — 5 лет.</li>
+            <li class="programs__item">Среднее общее образование: срок обучения — 2 года.</li>
+            <li class="programs__item">Дополнительное образование.</li>
+          </ul>
+          <button class="programs__btn">Подать заявку</button>
+        </div>
+        <div class="programs__image">
+          <img src="img/school_foto 1.png" alt="Программы">
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome">
+  <div class="welcome__container container">
+    <h2 class="welcome__title">Директор школы Григоренко Наталья Васильевна приветствует вас на официальном сайте МБОУ СОШ №19!</h2>
+    <div class="welcome__content">
+      <img src="img/Директор 1.png" alt="Директор" class="welcome__photo">
+      <div class="welcome__text">
+        <p class="welcome__greeting">Уважаемые коллеги, дорогие родители и ученики!</p>
+        <p>От лица всего педагогического коллектива школы №19 сердечно приветствую вас на нашем сайте. Здесь вы найдёте актуальную информацию об образовательном процессе, достижениях наших учеников, творческих инициативах и важных событиях школьной жизни.</p>
+        <p>Мы стремимся к тому, чтобы каждый ребёнок, переступивший порог нашей школы, не только получил прочные знания, но и раскрыл свой потенциал, почувствовал поддержку, обрёл друзей и научился быть ответственным, добрым и активным гражданином. Уверена: вместе — семья, школа и общество — мы создаём будущее наших детей.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="history">
+      <div class="history__container container">
+        <h2 class="history__title">Наша история</h2>
+        <div class="history__content">
+          <div class="history__text">
+            <p>МБОУ «Средняя общеобразовательная школа №19» расположена в самом центре города Сергиева Посада, недалеко от Троице-Сергиевой лавры, в микрорайоне Рабочий поселок, который строился для рабочих Загорского оптико-механического завода.</p>
+            <p>Школа была открыта 1 сентября 1956 года. В ней обучались 764 ученика. Первый выпуск обучающихся, получивших аттестаты о среднем образовании, состоялся в 1959 году.</p>
+            <p>Школа дала путёвку в жизнь более 3000 выпускников. 16 из них окончили школу с золотой медалью, 29 — с серебряной медалью.</p>
+          </div>
+          <img src="img/eeea2e98f22dff797141acbce3dd0ab9 1 (1).png" alt="Здание школы" class="history__image">
+        </div>
+      </div>
+    </section>
+
+    <!-- Наши выпускники -->
+    <section class="achievements">
+      <div class="achievements__container container">
+        <h2 class="achievements__title">Наши выпускники</h2>
+        <div class="achievements__content">
+          <div class="achievements__item">
+            <img src="img/5472152789305122065 1.png" alt="Ученица с дипломом" class="achievements__photo">
+            <div class="achievements__text">
+              Золотая медаль: Кичик Екатерина, Соболь Дарья<br>
+              Серебряная медаль: Асфандиярова Ангелина, Аутко Карина, Золкина Мария
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts">
+      <div class="contacts__container container">
+        <h2 class="contacts__title">Контакты и адрес</h2>
+        <div class="contacts__content">
+          <div class="contacts__info">
+            <p><strong>Адрес:</strong> Московская область, г. Сергиев Посад, ул. Леонида Булавина, д.6</p>
+            <p><strong>Контактные телефоны:</strong></p>
+            <ul>
+              <li>директор школы, секретарь 8(496) 542-93-09 (телефон/факс)</li>
+              <li>учебная часть 8(496) 542-02-11</li>
+              <li>зав. структурным отделением 8(496) 542-34-43</li>
+              <li>медицинский кабинет 8(496) 542-28-85</li>
+              <li>пост охраны 8(496) 542-45-67</li>
+            </ul>
+            <p><strong>Адрес электронной почты:</strong> sp_mboou_19@mosreg.ru</p>
+          </div>
+          <div class="contacts__map">
+            <img src="img/shema 1.png" alt="Карта проезда">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+   <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__logo">
+        <img src="img/logo 1.svg" alt="Логотип">
+        <span class="footer__school-name">МБОУ СОШ №19</span>
+      </div>
+      <div class="footer__contact">
+        <img src="img/clipart-phone-telephone-symbol-18 2.png" alt="Телефон">
+        <a href="tel:+79037838053" class="footer__phone">+7-903-783-80-53</a>
+      </div>
+      <div class="footer__btn">
+        <button class="btn">Подать заявку</button>
+      </div>
+      <div class="footer__copyright">
+        ©2025. МБОУ Средняя общеобразовательная школа №19.
+      </div>
+    </div>
+  </footer>
+    </div>
+  </footer>
+  <script src="js/style.js" defer></script>
+</body>
+</html>

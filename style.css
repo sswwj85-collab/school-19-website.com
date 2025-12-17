@@ -1,0 +1,519 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2D3748;
+  background-color: #F5FAFF;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+.btn, .programs__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  background-color: #2A9DCC;
+  color: white;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.btn:hover, .programs__btn:hover {
+  background-color: rgb(33.2926829268, 124.4512195122, 161.7073170732);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(42, 157, 204, 0.25);
+}
+@media (max-width: 768px) {
+  .btn, .programs__btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+.header {
+  padding: 16px 0;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 100;
+}
+.header--mobile-open .header__burger span:nth-child(1) {
+  transform: translateY(7px) rotate(55deg);
+}
+.header--mobile-open .header__burger span:nth-child(2) {
+  opacity: 0;
+}
+.header--mobile-open .header__burger span:nth-child(3) {
+  transform: translateY(-10px) rotate(-55deg);
+}
+.header--mobile-open .header__mobile-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  gap: 24px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header__logo img {
+  height: 40px;
+}
+.header__logo-school-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1E567F;
+}
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+}
+.header__menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 28px;
+}
+.header__menu-link {
+  text-decoration: none;
+  color: #2D3748;
+  font-weight: 600;
+  font-size: 1.05rem;
+  position: relative;
+  transition: color 0.25s ease;
+}
+.header__menu-link:hover {
+  color: #2A9DCC;
+}
+.header__contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__contact img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.85;
+}
+.header__contact-phone {
+  color: #1E567F;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.header__contact-phone:hover {
+  color: #2A9DCC;
+}
+.header__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .header__burger {
+    display: flex;
+  }
+}
+.header__burger span {
+  width: 100%;
+  height: 2px;
+  background-color: #1E567F;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.header__mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (min-width: 769px) {
+  .header__mobile-menu {
+    display: none;
+  }
+}
+.header__mobile-link {
+  display: block;
+  padding: 12px 24px;
+  color: #1E567F;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: color 0.25s ease;
+}
+.header__mobile-link:hover {
+  color: #2A9DCC;
+}
+
+.contacts, .achievements, .history, .welcome, .programs {
+  padding: 80px 0;
+  background: #F5FAFF;
+}
+@media (max-width: 768px) {
+  .contacts, .achievements, .history, .welcome, .programs {
+    padding: 50px 0;
+  }
+}
+
+.contacts__title, .achievements__title, .history__title, .welcome__title, .programs__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #1E567F;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.25;
+}
+@media (max-width: 768px) {
+  .contacts__title, .achievements__title, .history__title, .welcome__title, .programs__title {
+    font-size: 1.6rem;
+  }
+}
+
+.programs__container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .programs__container {
+    flex-direction: column;
+  }
+}
+.programs__text {
+  flex: 1;
+}
+.programs__title {
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .programs__title {
+    text-align: center;
+  }
+}
+.programs__list {
+  list-style: none;
+  margin-bottom: 30px;
+}
+.programs__list .programs__item {
+  margin-bottom: 14px;
+  padding-left: 26px;
+  position: relative;
+  color: #4A5568;
+}
+.programs__list .programs__item:before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #2A9DCC;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+.programs__image {
+  flex: 0 0 500px;
+}
+@media (max-width: 768px) {
+  .programs__image {
+    flex: 0 0 100%;
+  }
+}
+.programs__image img {
+  width: 800px;
+  height: 475px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.welcome__content {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .welcome__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.welcome__photo {
+  width: 350px;
+  height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .welcome__photo {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+.welcome__text {
+  max-width: 680px;
+  padding: 30px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.welcome__text p {
+  margin-bottom: 16px;
+}
+.welcome__text p:last-child {
+  margin-bottom: 0;
+}
+.welcome__greeting {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2A9DCC;
+  margin-bottom: 16px;
+}
+
+.history__content {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .history__content {
+    flex-direction: column;
+  }
+}
+.history__text {
+  max-width: 680px;
+  padding: 40px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.history__text p {
+  margin-bottom: 16px;
+}
+.history__text p:last-child {
+  margin-bottom: 0;
+}
+.history__image {
+  width: 450px;
+  max-width: 680px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.achievements__content {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .achievements__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.achievements__item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  max-width: 600px;
+}
+@media (max-width: 768px) {
+  .achievements__item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.achievements__photo {
+  width: 650px;
+  height: 340px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 768px) {
+  .achievements__photo {
+    width: 100%;
+    max-width: 160px;
+  }
+}
+.achievements__text {
+  flex: 1;
+  padding: 15px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  font-size: 1.07rem;
+  line-height: 1.7;
+}
+
+.contacts__content {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .contacts__content {
+    flex-direction: column;
+  }
+}
+.contacts__info {
+  max-width: 500px;
+  padding: 30px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.contacts__info p {
+  margin-bottom: 14px;
+}
+.contacts__info p strong {
+  color: #1E567F;
+}
+.contacts__info ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 16px 0;
+}
+.contacts__info ul li {
+  margin-bottom: 10px;
+  padding-left: 26px;
+  position: relative;
+}
+.contacts__info ul li:before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #2A9DCC;
+  font-size: 1.4rem;
+}
+.contacts__map {
+  flex: 0 0 500px;
+}
+@media (max-width: 768px) {
+  .contacts__map {
+    flex: 0 0 100%;
+  }
+}
+.contacts__map img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  padding: 60px 0 30px;
+  background: #2A527B;
+  color: white;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1175px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+@media (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.footer__logo img {
+  height: 36px;
+}
+.footer__logo-school-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: white;
+}
+.footer__contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer__contact img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.9;
+}
+.footer__contact-phone {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer__contact-phone:hover {
+  color: #2A9DCC;
+}
+.footer__btn .btn, .footer__btn .programs__btn {
+  background-color: #2A9DCC;
+}
+.footer__btn .btn:hover, .footer__btn .programs__btn:hover {
+  background-color: rgb(33.2926829268, 124.4512195122, 161.7073170732);
+}
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  text-align: center;
+  width: 100%;
+  margin-top: 24px;
+}
+@media (min-width: 769px) {
+  .footer__copyright {
+    width: auto;
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
